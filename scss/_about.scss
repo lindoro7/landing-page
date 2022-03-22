@@ -1,0 +1,85 @@
+.about {
+  padding-top: 36px;
+  margin-bottom: 150px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__first {
+    max-width: 540px;
+  }
+
+  &__second {
+    position: relative;
+  }
+
+  &__title {
+    color: $white-color;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 4.8rem;
+    margin-bottom: 6.8rem;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    opacity: 0.7;
+    color: $white-color;
+
+    & + & {
+      margin-top: 2.3rem;
+    }
+  }
+
+  &__main-img {
+    position: absolute;
+    top: 51px;
+    left: 125px;
+    z-index: 10;
+  }
+
+  &__secondary-img {
+    position: absolute;
+    top: 117px;
+    left: 220px;
+  }
+}
+
+.bass {
+    width: 64px;
+    height: 31px;
+    display: inline-block;
+    margin-right: 28px;
+    background-image: url(../img/bass.png);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  row-gap: 34px;
+
+  &__item {
+    color: $white-color;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    width: 220px;
+    position: relative;
+    margin-left: 50px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: $accent-color;
+      position: absolute;
+      left: -50px;
+      @include bordering(10px, 0);
+    }
+  }
+}

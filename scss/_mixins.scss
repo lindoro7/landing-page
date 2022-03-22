@@ -1,0 +1,4 @@
+@mixin bordering($x, $y) {
+  border-radius: $x $y;
+  overflow: hidden;
+}

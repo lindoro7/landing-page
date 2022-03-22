@@ -1,0 +1,49 @@
+.radio {
+  padding-top: 88px;
+  margin-bottom: 180px;
+
+  &__wrapper {
+    border: 1px solid $white-color;
+    @include bordering(30px, 0);
+    padding: 50px 510px 50px 80px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $white-color;
+    position: relative;
+    overflow: visible;
+
+    hr {
+      color: $white-color;
+      opacity: 0.6;
+      margin-bottom: 25px;
+    }
+
+    span a{
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $accent-color;;
+    }
+
+    .radio__back-img {
+      position: absolute;
+      max-width: 103px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 23px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -86px;
+    right: 77px;
+    max-width: 370px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

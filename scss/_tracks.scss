@@ -1,0 +1,100 @@
+.tracks {
+  margin-bottom: 183px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    max-width: 510px;
+    padding-top: 120px;
+  }
+
+  &__right {
+    padding-left: 60px;
+    padding-top: 93px;
+    width: 600px;
+  }
+
+  &__title {
+    color: $white-color;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 4.8rem;
+    margin-bottom: 68px;
+  }
+
+  .pleer {
+
+    margin-bottom: 50px;
+
+    &__control {
+      flex-basis: 10%;
+    }
+
+    &__range {
+      flex-basis: 62%;
+    }
+
+    &__time {
+      flex-basis: 28%;
+    }
+  }
+
+  &__list {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $white-color;
+    margin-bottom: 51px;
+  }
+
+  &__item {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    & small {
+      opacity: .5;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-right: 14px;
+    }
+  }
+
+  &__footer {
+    font-weight: 600;
+    font-size: 24px;
+    color: $white-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > span {
+      margin-right: 41px;
+    }
+  }
+  
+  &__social {
+    font-size: 1.4rem;
+    display: flex;
+    margin-right: 30px;
+    cursor: pointer;
+
+    a {
+      color: $white-color;
+      display: flex;
+      align-items: center;
+    }
+
+    & img {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.events {
+  margin-bottom: 180px;
+    
+  .slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__item {
+      width: 350px;
+      @include bordering(30px, 0);
+      overflow: hidden;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: $white-color;
+      opacity: 0.5;
+      background-color: #2F2B2B;
+      position: relative;
+      padding-bottom: 22px;
+
+      img {
+        @include bordering(30px, 0);
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__control {
+      position: absolute;
+      color: $white-color;
+      opacity: 0.5;
+      padding: 19px 7px;
+      border: 1px solid rgba($white-color, 0.5);
+      @include bordering(10px, 0);
+      top: 50%;
+      transform: translate(0, -50%);
+      cursor: pointer;
+
+      &_left {
+        left: -78px;
+      }
+  
+      &_right {
+        right: -81px;
+      }
+    }
+
+    
+  }
+
+  .party {
+    &-city {
+      font-size: 1.8rem;
+      opacity: 0.5;
+      margin-bottom: 26px;
+      margin-left: 37px;
+    }
+
+    &-club {
+      font-size: 1.8rem;
+      margin-bottom: 51px;
+      margin-left: 35px;
+    }
+
+    &-date {
+      opacity: 0.5;
+      margin-left: 42px;
+      text-transform: uppercase;
+
+    }
+
+    &-tickets {
+      text-transform: uppercase;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include bordering(30px, 0);
+      background-color: $accent-color;
+      padding: 22px 62px 20px 52px;
+      color: $white-color;
+    }
+  }
+
+}
